@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arial"; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h2 {
+  color: blue; }
+
+.canvas {
+  background-image: url("images/light_grey.png");
+  height: 100vh; }
+
+.container, #header .logo {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 90%; }
+
+.logo {
+  padding: 18px 0px 18px 0px; }
+
+/**************************************************************/
+/*Responsive Design - Grid*/
+/*Mobile Breakponts at end of CSS file*/
+/**************************************************************/
+/*Columns are wrapped in rows to prevent other elements from 
+stacking next to them*/
+.row {
+  overflow: hidden; }
+
+.column {
+  float: left; }
+
+.column.full {
+  width: 100%; }
+
+.column.two-thirds {
+  width: 66.7%; }
+
+.column.half {
+  width: 50%; }
+
+.column.third {
+  width: 33.3%; }
+
+.column.fourth {
+  width: 24.95%; }
+
+/**************************************************************/
+#header {
+  background-color: #535353;
+  height: 100px; }
+
+#nav-bar {
+  padding: 10px 5px 40px 5px; }
+
+#nav-bar li {
+  display: inline;
+  margin-right: 50px;
+  font-weight: bold; }
+
+#side-bar {
+  /*height: 300px;*/
+  height: 300px;
+  width: 250px;
+  border: lightgrey 3px solid;
+  margin-bottom: 20px; }
+
+#login {
+  width: 80%;
+  margin: 25px auto 0px auto; }
+
+#main {
+  margin-left: 80px;
+  max-width: 600px; }
+
+#main-content {
+  padding-top: 15px;
+  max-width: 530px; }
+
+#submit-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 2em;
+  background-color: orange;
+  border-radius: 5px;
+  color: white; }
+
+/*Mobile Breakpoint - If the browser's screen size is within a set range, a media query will replace the CSS the 
+browser uses. */
+@media all and (max-width: 1000px) {
+  .column.full,
+  .column.two-thirds,
+  .column.half,
+  .column.one-third,
+  .column.one-fourth {
+    margin: 0;
+    width: 85%; }
+
+  #main {
+    margin-left: 0px; }
+
+  img {
+    max-width: 90%; } }
